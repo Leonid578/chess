@@ -1,4 +1,14 @@
-<div><div></div>
+import React from 'react'
 
-<div></div></div>
+const BoardComponent = () => {
+    return (
+        <div className='board'>
+            <div className="cell white"></div>
+            <div className="cell black"></div>
+            <div className="cell white"></div>
+            <div className="cell black"></div>
+        </div>
+    )
+}
 
+export default BoardComponent
