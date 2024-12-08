@@ -18,8 +18,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>hui</h1>
-      <BoardComponent boar={board} setBoard={setBoard} />
+      <h1>Шахматная доска</h1>
+      <BoardComponent board={board} setBoard={setBoard} />
+      <button onClick={restart}>Перезапустить</button>  
     </div>
   );
 }
