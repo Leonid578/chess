@@ -21,4 +21,29 @@ export class Cell{
         this.available = false;
         this.id = Math.random();
     }
+
+    // // Установить фигуру на клетку
+    // setFigure(figure: Figure) {
+    //     this.figure = figure;
+    // }
+
+    // // Убрать фигуру с клетки
+    // removeFigure() {
+    //     this.figure = null;
+    // }
+
+    // // Проверить доступность клетки для хода
+    // isAvailable(): boolean {
+    //     return this.available && this.figure === null;
+    // }
+
+    // // Подсветить клетку
+    // highlight() {
+    //     this.highlighted = true;
+    // }
+
+    // // Снять подсветку
+    // unhighlight() {
+    //     this.highlighted = false;
+    // }
 }
