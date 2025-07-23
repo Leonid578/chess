@@ -7,7 +7,7 @@ interface CellProps {
 
 const CellComponent: FC<CellProps> = ({cell:cell}) => {
     return (
-        <div className='cell'>
+        <div className = {['cell', cell.color].join(' ')}>
            
         </div>
     )
