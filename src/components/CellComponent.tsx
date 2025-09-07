@@ -5,10 +5,10 @@ interface CellProps {
     cell: Cell
 }
 
-const CellComponent: FC<CellProps> = ({cell:cell}) => {
+const CellComponent: FC<CellProps> = ({ cell: cell }) => {
     return (
-        <div className = {['cell', cell.color].join(' ')}>
-           
+        <div className={['cell', cell.color].join(' ')}>
+
         </div>
     )
 }
