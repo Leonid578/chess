@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import CellComponent from "./CellComponent";
 import { Board } from "../models/Board";
-// import { Cell } from "../models/Cell";
+import { Cell } from "../models/Cell";
 
 interface BoardProps {
   board: Board;
@@ -12,8 +12,11 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
     <div className="board">
       {board.cells.map((row, rowIndex) => (
         <React.Fragment key={rowIndex}>
-          {row.map(cell =>  
-            <CellComponent cell={cell} />
+          {row.map(cell =>
+            <CellComponent
+              cell={cell}
+              key={cell.id}
+            />
           )}
         </React.Fragment>
       ))}
